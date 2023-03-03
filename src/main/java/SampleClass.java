@@ -57,8 +57,18 @@ public class SampleClass {
 
     //    implement a custom .equals(SampleClass other){} method here.
 
-
+    public boolean equals(SampleClass other) {
+      if (this.a == other.a && this.b == other.b) {
+        return true;
+      }
+      else if (this.a != other.a || this.b != other.b) {
+        return false;
+      }
+      return true;
+    }
     //    implement a custom .toString(){} method here.
 
-    
+    public String toString() {
+        return "" + a + b;
+    }
 }
